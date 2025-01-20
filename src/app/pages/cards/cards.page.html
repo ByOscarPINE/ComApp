@@ -1,0 +1,92 @@
+
+<app-header title="Cards"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-title>Terry A. Davis</ion-title>
+      <ion-card-subtitle>Programador Estadounidense</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Terry A. Davis fue un programador estadounidense que creó el sistema operativo TempleOS. Davis fue diagnosticado con esquizofrenia y vivió en un automóvil en Las Vegas, Nevada, durante varios años. Falleció el 11 de agosto de 2018.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUslXqwlwWkZ9BLwBgLp4kXz2MImmzQbltQ&s" width="100%">
+    <ion-card-header>
+      <ion-title>Conker's</ion-title>
+      <ion-card-subtitle>Personaje de Videojuego</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Conker's Bad Fur Day es un videojuego de plataformas desarrollado y publicado por Rare para la consola Nintendo 64. Fue lanzado en abril de 2001 en América del Norte y en junio de 2001 en Europa. El juego sigue a Conker, un escurridizo y bebedor ardilla roja que debe regresar a casa después de una noche de borrachera.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-title>Conker's</ion-title>
+      <ion-card-subtitle>Personaje de Videojuego</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Conker's Bad Fur Day es un videojuego de plataformas desarrollado y publicado por Rare para la consola Nintendo 64. Fue lanzado en abril de 2001 en América del Norte y en junio de 2001 en Europa. El juego sigue a Conker, un escurridizo y bebedor ardilla roja que debe regresar a casa después de una noche de borrachera.
+    </ion-card-content>
+    <ion-button fill="clear">Favoritos</ion-button>
+    <ion-button fill="clear">Ver mas...</ion-button>
+  </ion-card>
+  
+  <ion-card mode="ios"> 
+    <ion-card-header>
+      <ion-card-subtitle>Personaje de Videojuego</ion-card-subtitle>
+      <ion-title>Conker's</ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      Conker's Bad Fur Day es un videojuego de plataformas desarrollado y publicado por Rare para la consola Nintendo 64. Fue lanzado en abril de 2001 en América del Norte y en junio de 2001 en Europa. El juego sigue a Conker, un escurridizo y bebedor ardilla roja que debe regresar a casa después de una noche de borrachera.
+    </ion-card-content>
+    <ion-button fill="clear">Favoritos</ion-button>
+    <ion-button fill="clear">Ver mas...</ion-button>
+  </ion-card>
+
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-title>Terry A. Davis</ion-title>
+      <ion-card-subtitle>Programador Estadounidense</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Terry A. Davis fue un programador estadounidense que creó el sistema operativo TempleOS. Davis fue diagnosticado con esquizofrenia y vivió en un automóvil en Las Vegas, Nevada, durante varios años. Falleció el 11 de agosto de 2018.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="tertiary">
+    <ion-card-header>
+      <ion-title>Terry A. Davis</ion-title>
+      <ion-card-subtitle>Programador Estadounidense</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Terry A. Davis fue un programador estadounidense que creó el sistema operativo TempleOS. Davis fue diagnosticado con esquizofrenia y vivió en un automóvil en Las Vegas, Nevada, durante varios años. Falleció el 11 de agosto de 2018.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="success">
+    <ion-card-header>
+      <ion-title>Terry A. Davis</ion-title>
+      <ion-card-subtitle>Programador Estadounidense</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Terry A. Davis fue un programador estadounidense que creó el sistema operativo TempleOS. Davis fue diagnosticado con esquizofrenia y vivió en un automóvil en Las Vegas, Nevada, durante varios años. Falleció el 11 de agosto de 2018.
+    </ion-card-content>
+  </ion-card>
+
+
+  @for (item of peliculasList; track $index) {
+    <ion-card [color]="item.color">
+      <img [src]="item.urlImage" width="100%">
+      <ion-card-header>
+        <ion-title>{{item.nombre}}</ion-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{item.sinopsis}}
+      </ion-card-content>
+    </ion-card>
+  }
+</ion-content>
