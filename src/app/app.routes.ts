@@ -45,5 +45,29 @@ export const routes: Routes = [
   {
     path: 'datetime',
     loadComponent: () => import('./pages/datetime/datetime.page').then( m => m.DatetimePage)
+  },
+  {
+    path: 'toast',
+    loadComponent: () => import('./pages/toast/toast.page').then( m => m.ToastPage)
+  },
+  {
+    path: 'picker',
+    loadComponent: () => import('./pages/picker/picker.page').then( m => m.PickerPage)
+  },
+  {
+    path: 'spinner',
+    loadComponent: () => import('./pages/spinner/spinner.page').then( m => m.SpinnerPage)
+  },
+  {
+    path: 'item',
+    loadComponent: () => import('./pages/item/item.page').then( m => m.ItemPage)
+  },
+  {
+    path: 'item-sliding',
+    loadComponent: () => import('./pages/item-sliding/item-sliding.page').then( m => m.ItemSlidingPage)
+  },
+  {
+    path: 'avatar',
+    loadComponent: () => import('./pages/avatar/avatar.page').then( m => m.AvatarPage)
   }
 ];

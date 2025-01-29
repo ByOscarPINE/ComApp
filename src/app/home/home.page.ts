@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonIcon } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { heart, balloon, rocket, fastFood, trash, star, globe, americanFootballOutline, baseballOutline, basketOutline, basketballOutline } from 'ionicons/icons';
+import { heart, balloon, rocket, fastFood, trash, star, globe, americanFootballOutline, baseballOutline, basketOutline, basketballOutline, airplaneOutline } from 'ionicons/icons';
 
 interface menuItem {
   title: string;
@@ -74,6 +74,43 @@ export class HomePage {
       icon: 'basketball-outline',
       color: 'primary'
     },
+    {
+      title: 'Toast',
+      url: '/toast',
+      icon: 'airplane-outline',
+      color: 'dark'
+    },
+    {
+      title: 'Picker',
+      url: '/picker',
+      icon: 'airplane-outline',
+      color: 'dark'
+    },
+    {
+      title: 'Spinner',
+      url: '/spinner',
+      icon: 'airplane-outline',
+      color: 'dark'
+    },
+    {
+      title: 'Item',
+      url: '/item',
+      icon: 'airplane-outline',
+      color: 'dark'
+    },
+    {
+      title: 'Item-Sliding',
+      url: '/item-sliding',
+      icon: 'airplane-outline',
+      color: 'dark'
+    },
+    {
+      title: 'Avatar',
+      url: '/avatar',
+      icon: 'airplane-outline',
+      color: 'dark'
+    },
+
 
   ];
   constructor() {
@@ -86,7 +123,8 @@ export class HomePage {
       star,
       americanFootballOutline,
       baseballOutline,
-      basketballOutline
+      basketballOutline,
+      airplaneOutline,
     })
   }
 }
