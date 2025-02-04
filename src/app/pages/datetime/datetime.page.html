@@ -1,4 +1,13 @@
 <app-header title="Datetime"></app-header>
 
 <ion-content [fullscreen]="true">
+    <ion-datetime multiple="true"></ion-datetime>
+    <ion-datetime value="2000-05-13" min="1999-01-01" max="2001-12-31"></ion-datetime>
+    <ion-datetime dayValues="5,10,15,20,25,30" minuteValues="0,5,10"></ion-datetime>
+    <ion-datetime hourCycle="h12"></ion-datetime>
+    <ion-datetime presentation="month-year"></ion-datetime>
+    <ion-datetime presentation="year"></ion-datetime>
+    <ion-datetime presentation="month"></ion-datetime>
+    <ion-datetime presentation="time"></ion-datetime>
+    <ion-datetime presentation="date-time" preferWheel="true"></ion-datetime>
 </ion-content>

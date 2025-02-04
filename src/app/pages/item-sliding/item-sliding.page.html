@@ -1,41 +1,62 @@
 <app-header title="Item-Sliding"></app-header>>
-
 <ion-content [fullscreen]="true">
   <ion-list>
     <ion-item-sliding>
       <ion-item>
-        <ion-label>Sliding Item with End Options</ion-label>
+        <ion-label>Elemento deslizante con opciones al final</ion-label>
       </ion-item>
   
       <ion-item-options>
-        <ion-item-option>Favorite</ion-item-option>
-        <ion-item-option color="danger">Delete</ion-item-option>
+        <ion-item-option>Favorito</ion-item-option>
+        <ion-item-option color="danger">Eliminar</ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
   
     <ion-item-sliding>
       <ion-item-options side="start">
-        <ion-item-option color="success">Archive</ion-item-option>
+        <ion-item-option color="success">Archivar</ion-item-option>
       </ion-item-options>
   
       <ion-item>
-        <ion-label>Sliding Item with Start Options</ion-label>
+        <ion-label>Elemento deslizante con opciones al inicio</ion-label>
       </ion-item>
     </ion-item-sliding>
   
     <ion-item-sliding>
       <ion-item-options side="start">
-        <ion-item-option color="success">Archive</ion-item-option>
+        <ion-item-option color="success">Archivar</ion-item-option>
       </ion-item-options>
   
       <ion-item>
-        <ion-label>Sliding Item with Options on Both Sides</ion-label>
+        <ion-label>Elemento deslizante con opciones en ambos lados</ion-label>
       </ion-item>
   
       <ion-item-options side="end">
-        <ion-item-option>Favorite</ion-item-option>
-        <ion-item-option color="danger">Delete</ion-item-option>
+        <ion-item-option>Favorito</ion-item-option>
+        <ion-item-option color="danger">Eliminar</ion-item-option>
       </ion-item-options>
+    </ion-item-sliding>
+
+    <!-- Contenido adicional -->
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Nuevo elemento deslizante</ion-label>
+      </ion-item>
+  
+      <ion-item-options>
+        <ion-item-option color="primary">Compartir</ion-item-option>
+        <ion-item-option color="secondary">Más</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item-options side="start">
+        <ion-item-option color="tertiary">Fijar</ion-item-option>
+      </ion-item-options>
+  
+      <ion-item>
+        <ion-label>Otro elemento deslizante</ion-label>
+      </ion-item>
     </ion-item-sliding>
   </ion-list>
 </ion-content>

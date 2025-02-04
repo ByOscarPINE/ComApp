@@ -1,4 +1,27 @@
 <app-header title="List"></app-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="dark">
+    <ion-list inset="true">
+        @for (game of listGames; track $index) {
+            <ion-item>
+                <ion-label>{{ game }}</ion-label>
+            </ion-item>
+        }
+    </ion-list>
+    <ion-list lines="full">
+        @for (movies of listMovies; track $index) {
+            <ion-item>
+                <ion-icon slot="start" name="heart"></ion-icon>
+                <ion-label>{{ movies }}</ion-label>
+            </ion-item>
+        }
+    </ion-list>
+    <ion-list lines="none">
+        @for (movies of listMovies; track $index) {
+            <ion-item>
+                <ion-icon slot="start" name="heart"></ion-icon>
+                <ion-label>{{ movies }}</ion-label>
+            </ion-item>
+        }
+    </ion-list>
 </ion-content>

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonIcon } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { heart, balloon, rocket, fastFood, trash, star, globe, americanFootballOutline, baseballOutline, basketOutline, basketballOutline, airplaneOutline } from 'ionicons/icons';
+import { heart, balloon, rocket, fastFood, trash, star, globe, americanFootballOutline, baseballOutline, basketOutline, basketballOutline, airplaneOutline, bicycleOutline, barbellOutline, boatOutline, busOutline } from 'ionicons/icons';
 
 interface menuItem {
   title: string;
@@ -83,25 +83,25 @@ export class HomePage {
     {
       title: 'Picker',
       url: '/picker',
-      icon: 'airplane-outline',
+      icon: 'bicycle-outline',
       color: 'dark'
     },
     {
       title: 'Spinner',
       url: '/spinner',
-      icon: 'airplane-outline',
+      icon: 'boat-outline',
       color: 'dark'
     },
     {
       title: 'Item',
       url: '/item',
-      icon: 'airplane-outline',
+      icon: 'barbell-outline',
       color: 'dark'
     },
     {
       title: 'Item-Sliding',
       url: '/item-sliding',
-      icon: 'airplane-outline',
+      icon: 'bus-outline',
       color: 'dark'
     },
     {
@@ -110,7 +110,18 @@ export class HomePage {
       icon: 'airplane-outline',
       color: 'dark'
     },
-
+    {
+      title: 'Modal',
+      url: '/modal',
+      icon: 'bus-outline',
+      color: 'dark'
+    },
+    {
+      title: 'Segment',
+      url: '/segment',
+      icon: 'airplane-outline',
+      color: 'dark'
+    },
 
   ];
   constructor() {
@@ -125,6 +136,10 @@ export class HomePage {
       baseballOutline,
       basketballOutline,
       airplaneOutline,
+      bicycleOutline,
+      barbellOutline,
+      boatOutline,
+      busOutline
     })
   }
 }

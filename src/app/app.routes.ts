@@ -69,5 +69,13 @@ export const routes: Routes = [
   {
     path: 'avatar',
     loadComponent: () => import('./pages/avatar/avatar.page').then( m => m.AvatarPage)
+  },
+  {
+    path: 'modal',
+    loadComponent: () => import('./pages/modal/modal.page').then( m => m.ModalPage)
+  },
+  {
+    path: 'segment',
+    loadComponent: () => import('./pages/segment/segment.page').then( m => m.SegmentPage)
   }
 ];
