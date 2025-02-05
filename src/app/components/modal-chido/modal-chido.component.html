@@ -1,3 +1,21 @@
-<p>
-  modal-chido works!
-</p>
+
+  <ion-toolbar>
+    <ion-title>Registrar</ion-title>
+    <ion-button slot="end" color="tertiary" (click)="closeModal()">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-input placeholder="Escribe tu nombre..."></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Escribre tu password..."></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Escribe tu email..."></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" color="danger">Registrar</ion-button>
+  </ion-content>
