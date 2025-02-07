@@ -24,7 +24,7 @@ export class ModalPage implements OnInit {
   async openModal(){
     const modal = await this.modalCtrl.create({
       component: ModalChidoComponent,
-      initialBreakpoint: 0.8,
+      initialBreakpoint: 0.33,
     });
     await modal.present();
   }

@@ -5,7 +5,7 @@
       <ion-icon name="close"></ion-icon>
     </ion-button>
   </ion-toolbar>
-  <ion-content>
+  <ion-content class="ion-padding">
     <ion-list>
       <ion-item>
         <ion-input placeholder="Escribe tu nombre..."></ion-input>
@@ -17,5 +17,6 @@
         <ion-input placeholder="Escribe tu email..."></ion-input>
       </ion-item>
     </ion-list>
-    <ion-button expand="block" color="danger">Registrar</ion-button>
+    <ion-button expand="block" color="danger" id="open-toast" (click)="closeModal()">Registrar</ion-button>
+    <ion-toast color="success" trigger="open-toast" message="Usuario Registrado" duration="1000"></ion-toast>
   </ion-content>

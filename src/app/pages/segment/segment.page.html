@@ -1,13 +1,18 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>segment</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header title="Segment"></app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">segment</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-segment value="Electronica" scrollable="true">
+    @for (cat of categorias; track $index) {
+      <ion-segment-button [value]="cat">
+        <ion-label>{{cat}}</ion-label>
+      </ion-segment-button>
+    }
+  </ion-segment>
+  <ion-segment value="Electronica" scrollable="true" color="tertiary">
+    @for (icon of iconos; track $index) {
+      <ion-segment-button [value]="icon">
+        <ion-icon [name]="icon"></ion-icon>
+      </ion-segment-button>
+    }
+  </ion-segment>
 </ion-content>
